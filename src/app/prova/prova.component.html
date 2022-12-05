@@ -1,19 +1,19 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-subtitle>{{cani[0].razza}}</mat-card-subtitle>
-    <mat-card-title>{{cani[0].nome}}</mat-card-title>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title> {{ comix[0].series}} </mat-card-title>
+    <mat-card-subtitle> {{ comix[0].type}} </mat-card-subtitle>
   </mat-card-header>
+  <img mat-card-image [src]="comix[0].thumb" alt="comix image">
   <mat-card-content>
-    <p>This card has divider and indeterminate progress as footer</p>
-    <p>{{cani[0].descrizione}}</p>
-    <mat-divider></mat-divider>
+    <p>
+      {{ comix[0].price}}
+    </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE</button>
+    <button mat-button [disabled]="isdisable">LIKE</button>
     <button mat-button>SHARE</button>
   </mat-card-actions>
-  <mat-card-footer>
-    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-  </mat-card-footer>
 </mat-card>
+
 

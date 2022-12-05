@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-project';
+
+  onInput( event: Event ) {
+
+    console.log((<HTMLInputElement>event.target).value)
+
+  }
+
+
 }
