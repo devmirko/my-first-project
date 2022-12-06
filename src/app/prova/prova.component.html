@@ -1,13 +1,13 @@
-<mat-card class="example-card">
+<mat-card class="example-card" *ngFor="let item of data">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title> {{ comix[0].series}} </mat-card-title>
-    <mat-card-subtitle> {{ comix[0].type}} </mat-card-subtitle>
+    <mat-card-title> {{ item.series }} </mat-card-title>
+    <mat-card-subtitle> {{ item.type}} </mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="comix[0].thumb" alt="comix image">
+  <img mat-card-image [src]="item.thumb" alt="comix image">
   <mat-card-content>
     <p>
-      {{ comix[0].price}}
+      {{ item.price}}
     </p>
   </mat-card-content>
   <mat-card-actions>
