@@ -5,3 +5,19 @@
 .example-header-image {
   background-size: cover;
 }
+
+.cerchio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.disponibile{
+  background-color: green;
+}
+
+.indisponibile{
+  background-color: red;
+}
