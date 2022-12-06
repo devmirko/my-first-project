@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+  @ViewChild('mandainput') valoreInput!: ElementRef
   title = 'my-first-project';
+
+  ngAfterViewInit(): void {
+    console.log(this.valoreInput);
+
+  }
 
   comix = [{
     thumb: "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
@@ -68,17 +74,24 @@ export class AppComponent {
 
 ]
 
-  onInput( event: Event ) {
-    this.title = (<HTMLInputElement>event.target).value
-    console.log((<HTMLInputElement>event.target).value)
+  // onInput( event: Event ) {
+  //   this.title = (<HTMLInputElement>event.target).value
+  //   console.log((<HTMLInputElement>event.target).value)
 
-  }
+  // }
 
-  onClick( event: Event ) {
-    this.title = "titolo modificato"
+  // onClick( event: Event ) {
+  //   this.title = "titolo modificato"
 
 
-  }
+  // }
+
+    onClick() {
+
+     console.log(this.valoreInput.nativeElement.value);
+
+    }
+
 
 
 }
