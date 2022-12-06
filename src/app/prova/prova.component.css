@@ -1,5 +1,6 @@
 .example-card {
-  max-width: 400px;
+  max-width: 200px;
+
 }
 
 .example-header-image {
@@ -21,3 +22,5 @@
 .indisponibile{
   background-color: red;
 }
+
+

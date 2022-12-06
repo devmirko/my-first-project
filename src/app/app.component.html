@@ -1,12 +1,15 @@
-<app-prova [data]="comix"></app-prova>
+<app-header></app-header>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <!-- inseriamo un input con un evento e li passiamo alla funzione la variabile con l'evento -->
-    <input matInput [(ngModel)]="title"/>
-  </mat-form-field>
-  <button mat-button color="accent" (click)="onClick($event)">Accent</button>
-  <p>{{title}}</p>
+<div id="main">
+  <div class="container">
+    <app-prova *ngFor="let data of comix" [item]="data"></app-prova>
+  </div>
+</div>
 
-
-
+<mat-form-field class="example-full-width">
+  <mat-label>Favorite food</mat-label>
+  <!-- inseriamo un input con un evento e li passiamo alla funzione la variabile con l'evento -->
+  <input matInput [(ngModel)]="title"/>
+</mat-form-field>
+<button mat-button color="accent" (click)="onClick($event)">Send</button>
+<p>{{title}}</p>

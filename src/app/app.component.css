@@ -7,3 +7,25 @@
 .example-full-width {
   width: 100%;
 }
+
+#main{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container{
+ width: 80%;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.ng-star-inserted{
+  flex-basis: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+
