@@ -3,5 +3,7 @@
   <mat-form-field class="example-full-width">
     <mat-label>Favorite food</mat-label>
     <!-- inseriamo un input con un evento e li passiamo alla funzione la variabile con l'evento -->
-    <input matInput (input)="onInput($event)">
+    <input matInput [(ngModel)]="title"/>
   </mat-form-field>
+  <button mat-button color="accent" (click)="onClick($event)">Accent</button>
+  <p>{{title}}</p>

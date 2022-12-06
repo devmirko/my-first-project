@@ -9,8 +9,14 @@ export class AppComponent {
   title = 'my-first-project';
 
   onInput( event: Event ) {
-
+    this.title = (<HTMLInputElement>event.target).value
     console.log((<HTMLInputElement>event.target).value)
+
+  }
+
+  onClick( event: Event ) {
+    this.title = "titolo modificato"
+
 
   }
 
