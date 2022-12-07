@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./prova.component.css']
 })
 export class ProvaComponent implements OnInit {
-  @Input() item: any
-  isdisable = false
+  @Input() item:  any
+
 
 
   constructor() {
