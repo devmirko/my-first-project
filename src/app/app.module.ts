@@ -15,13 +15,15 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { HeaderComponent } from './header/header.component';
+import { HighlightDirective } from './direttive/highlight/highlight.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProvaComponent,
-    HeaderComponent
+    HeaderComponent,
+    HighlightDirective
 
   ],
   imports: [
