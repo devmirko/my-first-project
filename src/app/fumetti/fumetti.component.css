@@ -1,0 +1,22 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+.ng-star-inserted{
+  flex-basis: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+ }

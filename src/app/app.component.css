@@ -16,16 +16,8 @@
 
 }
 
-.container{
- width: 80%;
- display: flex;
- flex-wrap: wrap;
-}
 
-.ng-star-inserted{
-  flex-basis: auto;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
+
+
 
 

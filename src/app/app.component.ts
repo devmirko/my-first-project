@@ -6,24 +6,17 @@ import { ServizioProvaService } from './Service/servizio-prova.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit, OnInit  {
+export class AppComponent implements AfterViewInit  {
   @ViewChild('mandainput') valoreInput!: ElementRef
   title = 'my-first-project';
-  public fumetti;
-  constructor( private ServizioProva: ServizioProvaService) {
-    this.fumetti = ServizioProva.comix
 
-  }
 
   ngAfterViewInit(): void {
     console.log(this.valoreInput);
 
   }
 
-  ngOnInit(): void {
-    console.log(this.ServizioProva.comix);
 
-  }
 
 
 

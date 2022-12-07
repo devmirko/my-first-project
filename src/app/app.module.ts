@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { HeaderComponent } from './header/header.component';
 import { HighlightDirective } from './direttive/highlight/highlight.directive';
+import { FumettiComponent } from './fumetti/fumetti.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HighlightDirective } from './direttive/highlight/highlight.directive';
     AppComponent,
     ProvaComponent,
     HeaderComponent,
-    HighlightDirective
+    HighlightDirective,
+    FumettiComponent
 
   ],
   imports: [
