@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-prova',
   templateUrl: './prova.component.html',
   styleUrls: ['./prova.component.css']
 })
-export class ProvaComponent implements OnInit {
+export class ProvaComponent {
   @Input() item:  any
   @Input() index:  any
 
@@ -16,8 +16,6 @@ export class ProvaComponent implements OnInit {
 
 
   }
-
-  ngOnInit(): void {}
 
 
 

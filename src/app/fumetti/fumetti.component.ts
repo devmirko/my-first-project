@@ -12,23 +12,20 @@ export class FumettiComponent implements OnInit{
   fumetti: any
   fumetto: any
   isProfile:boolean
-  constructor(private ServizioProva: ServizioProvaService, private route: ActivatedRoute){
-    // this.fumetti = ServizioProva.comix
-  }
+  constructor(private ServizioProva: ServizioProvaService, private route: ActivatedRoute){}
 
   ngOnInit(): void {
     if(this.route.snapshot.paramMap.get('id')){
       this.isProfile = true
       this.fumetto = this.ServizioProva.getFumetto(parseInt(this.route.snapshot.paramMap.get('id')!))
-      console.log(this.fumetto);
+
 
 
     } else {
       this.isProfile = false
       this.fumetti = this.ServizioProva.getFumetti();
     }
-    console.log(this.route.snapshot.paramMap.get('id'));
-    console.log(this.isProfile);
+
 
 
   }

@@ -1,5 +1,4 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, OnInit } from '@angular/core';
-import { ServizioProvaService } from './Service/servizio-prova.service';
 
 @Component({
   selector: 'app-root',
