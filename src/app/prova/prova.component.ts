@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProvaComponent implements OnInit {
   @Input() item:  any
+  @Input() index:  any
+
 
 
 

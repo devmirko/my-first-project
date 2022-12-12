@@ -1,3 +1,9 @@
 <div class="container">
-  <app-prova class="ng-star-inserted" *ngFor="let data of fumetti" [item]="data"></app-prova>
+  <div *ngIf="!isProfile ;  else profiloContatto">
+    <app-prova class="ng-star-inserted" *ngFor="let data of fumetti, index as i" [item]="data" [index]="i"  ></app-prova>
+  </div>
+  <ng-template #profiloContatto>
+    <app-fumetto [fumetto]="fumetto"></app-fumetto>
+  </ng-template>
+
 </div>

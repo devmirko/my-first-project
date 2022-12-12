@@ -67,5 +67,13 @@ export class ServizioProvaService {
 
   constructor() { }
 
+  getFumetti() {
+    return this.comix
+  }
+
+  getFumetto(index: number) {
+    return this.comix[index]
+  }
+
 
 }

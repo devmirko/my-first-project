@@ -1,0 +1,15 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ fumetto.series}}</mat-card-title>
+    <mat-card-subtitle>{{ fumetto.type }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="fumetto.thumb" alt="Photo of fumetto">
+  <mat-card-content>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, eius ipsa odit laboriosam, tenetur reprehenderit inventore, id quisquam deserunt cum accusamus at sint nemo voluptatem omnis vero? Ut, reprehenderit beatae?
+    </p>
+    <p>{{fumetto.price}}</p>
+  </mat-card-content>
+</mat-card>
+

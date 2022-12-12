@@ -19,6 +19,8 @@ import { HighlightDirective } from './direttive/highlight/highlight.directive';
 import { FumettiComponent } from './fumetti/fumetti.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { FumettoComponent } from './fumetto/fumetto.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { ContactComponent } from './contact/contact.component';
     HighlightDirective,
     FumettiComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FumettoComponent,
+    NotfoundComponent
 
   ],
   imports: [
