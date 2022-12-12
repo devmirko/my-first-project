@@ -14,6 +14,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 import { HeaderComponent } from './header/header.component';
 import { HighlightDirective } from './direttive/highlight/highlight.directive';
 import { FumettiComponent } from './fumetti/fumetti.component';
@@ -21,6 +22,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FumettoComponent } from './fumetto/fumetto.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
     MatProgressBarModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule,
+    MatButtonModule
 
 
   ],

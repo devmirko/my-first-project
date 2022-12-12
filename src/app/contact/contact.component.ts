@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+
+  constructor() {
+
+  }
+
+  onSubmit(form : NgForm){
+
+   console.log(form);
+
+
+  }
 
 }
