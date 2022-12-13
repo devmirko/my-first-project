@@ -75,5 +75,9 @@ export class ServizioProvaService {
     return this.comix[index]
   }
 
+  AddFumetto( item:any ) {
+    this.comix.push(item)
+  }
+
 
 }

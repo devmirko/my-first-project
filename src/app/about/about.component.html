@@ -1,1 +1,27 @@
-<p>pagina about</p>
+ <form action="" [formGroup]="aboutform" (ngSubmit)="onUpdate()">
+ <!-- serie -->
+ <mat-form-field appearance="fill" >
+    <mat-label>series</mat-label>
+    <input matInput type="series" name="series" formControlName="series"/>
+  </mat-form-field>
+  <p *ngIf="!aboutform.get('series')?.valid && aboutform.get('series')?.touched">Inserisci la serie del fumetto</p>
+  <!-- type -->
+ <mat-form-field appearance="fill" >
+    <mat-label>type</mat-label>
+    <input matInput type="type" name="type" formControlName="type"/>
+  </mat-form-field>
+  <p *ngIf="!aboutform.get('type')?.valid && aboutform.get('type')?.touched">Inserisci la tipologia di fumetto</p>
+   <!-- Price -->
+ <mat-form-field appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput type="price" name="price" formControlName="price"/>
+  </mat-form-field>
+  <p *ngIf="!aboutform.get('price')?.valid && aboutform.get('price')?.touched">Inserisci il prezzo del fumetto</p>
+   <!-- Image -->
+ <mat-form-field appearance="fill">
+    <mat-label>Image</mat-label>
+    <input matInput type="thumb" name="thumb" formControlName="thumb"/>
+  </mat-form-field>
+  <p *ngIf="!aboutform.get('thumb')?.valid && aboutform.get('thumb')?.touched">Inserisci un immagine</p>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!aboutform.valid">Invia</button>
+</form>
