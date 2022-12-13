@@ -1,18 +1,20 @@
-<form action=""  #contactform = "ngForm" (ngSubmit)="onSubmit(contactform)">
+<form action="" [formGroup]="contactform" (ngSubmit)="onSubmit()">
   <!-- nome -->
   <mat-form-field appearance="fill" >
     <mat-label>Nome</mat-label>
-    <input matInput type="name" name="name" ngModel  required/>
+    <input matInput type="name" name="name" formControlName="name"/>
   </mat-form-field>
+  <p *ngIf="!contactform.get('name')?.valid && contactform.get('name')?.touched" style="color: red;"> Inserisci un nome </p>
   <!-- email -->
   <mat-form-field appearance="fill">
     <mat-label>Enter your email</mat-label>
-    <input matInput placeholder="pat@example.com" required email type="email" name="email" ngModel/>
+    <input matInput placeholder="pat@example.com" type="email" name="email" formControlName="email"/>
   </mat-form-field>
+  <p *ngIf="!contactform.get('email')?.valid && contactform.get('email')?.touched" style="color: red;"> Inserisci una email valida </p>
   <!-- messaggio -->
   <mat-form-field appearance="fill">
     <mat-label>Messaggio</mat-label>
-    <textarea matInput type="message" name="message" ngModel required></textarea>
+    <textarea matInput type="message" name="message" formControlName="message" placeholder="Scrivi la tua richiesta..."></textarea>
   </mat-form-field>
 
   <button mat-raised-button color="primary" type="submit" [disabled]="!contactform.valid">Invia</button>
