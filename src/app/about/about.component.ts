@@ -40,7 +40,7 @@ export class AboutComponent {
 
 
   onUpdate(){
-    this.firebase.insertFumetto('https://my-project-9bfb2-default-rtdb.europe-west1.firebasedatabase.app/fumetti.json',{
+    this.firebase.insertFumetto( this.firebase.urlFumetti + '.json',{
       series: this.aboutform.value.series,
       type: this.aboutform.value.type,
       price: this.aboutform.value.price,

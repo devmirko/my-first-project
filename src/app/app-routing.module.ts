@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ContactComponent } from './contact/contact.component';
 import { FumettiComponent } from './fumetti/fumetti.component';
+import { FumettoComponent } from './fumetto/fumetto.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
