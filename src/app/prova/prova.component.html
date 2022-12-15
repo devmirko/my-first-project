@@ -11,7 +11,7 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <a routerLink="/fumetti/{{index}}"><button mat-raised-button color="primary">Visualizza</button></a>
+    <a [routerLink]="['/fumetti',item.id]"><button mat-raised-button color="primary">Visualizza</button></a>
   </mat-card-actions>
 </mat-card>
 
