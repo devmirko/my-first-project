@@ -23,6 +23,10 @@ export class FirebaseService {
     return this.http.get(`${url}/${id}.json`)
   }
 
+  DeleteFumetto(url: string, id: string){
+    return this.http.delete(`${url}/${id}.json`)
+  }
+
 
 
 
