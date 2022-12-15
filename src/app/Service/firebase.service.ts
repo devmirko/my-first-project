@@ -27,6 +27,10 @@ export class FirebaseService {
     return this.http.delete(`${url}/${id}.json`)
   }
 
+  UpdateFumetto(url: string, id: string, body: {}){
+    return this.http.patch(`${url}/${id}.json`,body)
+  }
+
 
 
 

@@ -14,9 +14,7 @@ export class ProvaComponent {
 
   constructor( private firebase: FirebaseService, private route: ActivatedRoute) { }
 
-  // ngOnInit(): void {
-  //   this.OnDeleteFumetto
-  // }
+
 
 
 
