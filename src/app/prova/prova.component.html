@@ -13,6 +13,7 @@
   <mat-card-actions>
     <a [routerLink]="['/fumetti',item.id]"><button mat-raised-button color="primary">Visualizza</button></a>
     <button mat-raised-button color="primary"   (click)="OnDeleteFumetto()">Elimina</button>
+    <a [routerLink]="['/edit',item.id]"><button mat-raised-button color="primary">Modifica</button></a>
   </mat-card-actions>
 </mat-card>
 

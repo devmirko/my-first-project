@@ -25,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FumettoComponent } from './fumetto/fumetto.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import {MatButtonModule} from '@angular/material/button';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {MatButtonModule} from '@angular/material/button';
     AboutComponent,
     ContactComponent,
     FumettoComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    EditComponent
 
   ],
   imports: [

@@ -1,0 +1,26 @@
+<form action="" [formGroup]="editForm" (ngSubmit)="OnPatchFumetto()">
+<mat-form-field appearance="fill" >
+  <mat-label>series</mat-label>
+  <input matInput type="series" name="series" formControlName="series"/>
+</mat-form-field>
+<p *ngIf="!editForm.get('series')?.valid && editForm.get('series')?.touched">Inserisci la serie del fumetto</p>
+<!-- type -->
+<mat-form-field appearance="fill" >
+  <mat-label>type</mat-label>
+  <input matInput type="type" name="type" formControlName="type"/>
+</mat-form-field>
+<p *ngIf="!editForm.get('type')?.valid && editForm.get('type')?.touched">Inserisci la tipologia di fumetto</p>
+ <!-- Price -->
+<mat-form-field appearance="fill">
+  <mat-label>Price</mat-label>
+  <input matInput type="price" name="price" formControlName="price" required />
+</mat-form-field>
+<p *ngIf="!editForm.get('price')?.valid && editForm.get('price')?.touched">Inserisci il prezzo del fumetto</p>
+ <!-- Image -->
+<mat-form-field appearance="fill">
+  <mat-label>Image</mat-label>
+  <input matInput type="thumb" name="thumb" formControlName="thumb"/>
+</mat-form-field>
+<p *ngIf="!editForm.get('thumb')?.valid && editForm.get('thumb')?.touched">Inserisci un immagine</p>
+<button mat-raised-button color="primary" type="submit" [disabled]="!editForm.valid">Invia</button>
+</form>
